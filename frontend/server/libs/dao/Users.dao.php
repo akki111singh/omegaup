@@ -44,7 +44,6 @@ class UsersDAO extends UsersDAOBase {
         return ($username);
     }
 
-
     public static function IsUserInterviewer($user_id) {
         $sql = '
             SELECT
