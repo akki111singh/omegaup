@@ -44,6 +44,7 @@ class UsersDAO extends UsersDAOBase {
         return ($username);
     }
 
+
     public static function IsUserInterviewer($user_id) {
         $sql = '
             SELECT
@@ -123,7 +124,7 @@ class UsersDAO extends UsersDAOBase {
         $sql = 'SELECT
                     COALESCE(c.`name`, "xx") AS country,
                     s.`name` AS state,
-                    sc.`name` AS school,
+                      sc.`name` AS school,
                     e.`email`,
                     l.`name` AS locale
                 FROM
