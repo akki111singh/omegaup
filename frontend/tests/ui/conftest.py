@@ -11,6 +11,7 @@ import sys
 import time
 import urllib
 
+from ui import util
 import pytest
 
 from selenium import webdriver
@@ -20,7 +21,6 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
-from ui import util
 
 _DEFAULT_TIMEOUT = 10  # seconds
 _DIRNAME = os.path.dirname(__file__)

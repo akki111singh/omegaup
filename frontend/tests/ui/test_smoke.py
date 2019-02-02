@@ -5,13 +5,11 @@
 
 import os
 
+from ui import util
 import pytest
 
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
-
-from ui import util
-
 
 @util.no_javascript_errors()
 @util.annotate
