@@ -3,13 +3,17 @@
     <div class="panel-heading">
       <template v-if="!isIndex">
         <div class="text-right">
-          <form action="/rank/" method="GET">
+          <form action="/rank/"
+                method="get">
             <div class="form-inline">
               <div class="form-group">
-                <input class="form-control"
-                    type="text" name="query" autocomplete="off"/>
-              </div>
-              <input class="btn btn-primary btn-lg active" type="submit" value="Search User"/>
+                <input autocomplete="off"
+                     class="form-control"
+                     name="query"
+                     type="text">
+              </div><input class="btn btn-primary btn-lg active"
+                   type="submit"
+                   value="Search User">
             </div>
           </form>
         </div>
