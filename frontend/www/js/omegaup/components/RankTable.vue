@@ -2,6 +2,17 @@
   <div class="panel panel-default">
     <div class="panel-heading">
       <template v-if="!isIndex">
+        <div class="text-right">
+          <form action="/rank/" method="GET">
+            <div class="form-inline">
+              <div class="form-group">
+                <input class="form-control"
+                    type="text" name="query" autocomplete="off"/>
+              </div>
+              <input class="btn btn-primary btn-lg active" type="submit" value="Search User"/>
+            </div>
+          </form>
+        </div>
         <h3 class="panel-title">{{ UI.formatString(T.rankRangeHeader,
         {lowCount:(page-1)*length+1,highCount:page*length}) }}</h3>
         <template v-if="page &gt; 1">
